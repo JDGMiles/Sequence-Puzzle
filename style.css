@@ -1,0 +1,63 @@
+@font-face {font-family: Liberation Serif; src: url(http://jdgmiles.github.io/LiberationSerif.woff);}
+
+button, body, a, textarea, input, div {color: white; background-color:#000000; font-size:30px; font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif;}
+.topboxes{padding:10px;10px;10px;10px; text-align:left; width:110px; overflow:auto; text-align:center;}
+.inputfield{height:50px; width:110px; overflow:auto; text-align:center; vertical-align:middle;}
+.button1{height:48px; width:43px; font-size:120%; text-align:center; vertical-align:middle;}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border:0px;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index:5;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #181818;
+  border:2px solid #AAAAAA;
+  border-radius: 20px;
+  width: 26%;
+  position: relative;
+  transition: all 0s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color:#181818;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
