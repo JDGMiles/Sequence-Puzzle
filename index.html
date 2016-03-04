@@ -1,6 +1,6 @@
 <!DOCTYPE html><html><head><title>Sequence Puzzle</title>
 
-<meta name="viewport" content="width=1100, initial-scale=1">
+<meta name="viewport" content="width=700, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="shortcut icon" href="favicon.ico">
 
@@ -28,13 +28,14 @@
 
           <div class="topboxes" id="past" type="text"></div>
           <button class="button1" onmousedown="going=1; minuson();" onmouseup="going=0; changeamount=1; speed=500;">&minus;</button> <input class="inputfield" id="inputfield1" value="1234" type="text" onblur="if(this.value==' '){this.value='1234';} update();" onfocus="left=1; this.value = ' ';"/> <button class="button1" onmousedown="going=1; pluson();" onmouseup="going=0; changeamount=1; speed=500;">+</button>
-          <div class="topboxes" id="future" type="text"></div>
+          <div class="topboxes" id="future" type="text"></div><br>
+          <div style="width:550px">You can change the number in the middle and see how the sequence changes.<br><br><span style="font-size:120%">What is the rule?</span></div>
 
     <div id="popup1" class="overlay">
       <div class="popup"><br>
         <div style="background-color:#181818; font-family:Georgia; color:white; text-align:center; font-size:150%; border:0px;">Sequence Puzzle</div>
         <a class="close" href="#">&times;</a>
-        <p style="font-family:Georgia; font-size:100%; color:white; text-align:center;">You can change the number in the middle and see how the sequence changes.<br><br>What is the rule?</p>
+        <p style="font-family:Georgia; font-size:100%; color:white; text-align:center;">Use the +/&minus; buttons to adjust the middle number, or click it to type in a value.</p>
       </div>
     </div>
 
