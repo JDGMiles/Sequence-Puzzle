@@ -62,7 +62,7 @@ var speed=500;
 function update(){
   if(document.getElementById("inputfield1").value==" "){
   document.getElementById("past").innerHTML="<br><br><br><br><br>";
-  document.getElementById("future").innerHTML="<br><br><br><br><br>";
+  document.getElementById("future").innerHTML="<br><br><br><br><br><br>";
   }
   pastinput = document.getElementById("inputfield1").value;
   if(pastinput==""){document.getElementById("inputfield1").value=" ";}
@@ -72,7 +72,7 @@ function update(){
   if(pastinput<min){pastinput=pastinput.substring(1); document.getElementById("inputfield1").value=pastinput;}
   if(pastinput=="-"){
     document.getElementById("past").innerHTML="<br><br><br><br><br>";
-    document.getElementById("future").innerHTML="<br><br><br><br><br>";
+    document.getElementById("future").innerHTML="<br><br><br><br><br><br><br>";
   }
   if(document.getElementById("inputfield1").value!=" " && document.getElementById("inputfield1").value!="-" && pastinput<max && pastinput>min){
     additioncount=0;
