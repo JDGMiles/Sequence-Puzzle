@@ -102,7 +102,7 @@ function update(){
 }
 
 function leapyear(year){
-  if((year%4==0 && year%100!=0) || year%1000==0){return 1;}
+  if((year%4==0 && year%100!=0) || year%400==0){return 1;}
   else{return 0;}
 }
 
